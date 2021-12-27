@@ -245,7 +245,7 @@ Index Start
 }
 
 .footer__ul {
-  margin-top: 45px;
+  margin-top: 50px;
   display: flex;
   list-style: none;
 }
@@ -265,7 +265,7 @@ Index Start
 }
 
 .footer__copyright--styles {
-  padding-top: 7%;
+  padding-top: 60px;
   color: rgb(124, 91, 7);
   font-size: 22px;
   /* margin: 45px; */
