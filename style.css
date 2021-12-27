@@ -35,6 +35,7 @@ HEADER START
 */
 
 .header {
+  height: 100%;
   grid-area: header;
   background-image: linear-gradient(to left, rgb(12, 5, 39), #192a5a);
   /* background-color: #0f1934; */
@@ -55,11 +56,11 @@ HEADER START
 }
 
 .header__nav {
-  width: 80%;
-  padding-top: 50px;
+  min-width: 80%;
 }
 
 .header__nav__ul {
+  height: 100%;
   display: flex;
   list-style: none;
   justify-content: end;
