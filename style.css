@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -152,8 +152,8 @@ Index Start
   color: #071230;
   font-family: "Lato", sans-serif;
   font-size: 36px;
+  text-align: center;
   padding-bottom: 10px;
-  padding-left: 20%;
 }
 
 .sectionForm {
@@ -191,7 +191,7 @@ Index Start
 }
 
 .inputBox {
-  height: 18px;
+  height: 20px;
 }
 
 .inputItems {
@@ -213,11 +213,13 @@ Index Start
 
 .sectionFormPhoto__div {
   width: 50%;
+  /* margin-top: 25%; */
 }
 
 .sectionFormPhoto__div__Photo {
-  padding-top: 15%;
+  padding-top: 25%;
   width: 100%;
+  height: 80%;
 }
 
 /* 
@@ -350,7 +352,7 @@ NOSOTROS START
 
 .nosotros__section2__div__img {
   border: 2px solid black;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin: auto;
   display: block;
 }
@@ -383,6 +385,23 @@ NOSOTROS START
 
   */
 
+.cajaIconos {
+  width: auto;
+  padding-left: 46%;
+}
+
+.cajaCarousel {
+  align-items: center;
+  /* font-family: "Lato", sans-serif; */
+  background-color: rgb(153, 132, 87);
+}
+
+.housesList__text {
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+}
+
 .housesList {
   display: flex;
   flex-direction: column;
@@ -410,11 +429,13 @@ NOSOTROS START
 }
 
 .housesList__bathroomIcon {
-  width: 5%;
+  width: 4.5% !important;
+  /* padding-left: 46%; */
 }
 
 .housesList__bedroomIcon {
-  width: 5%;
+  width: 6% !important;
+  /* padding-left: 46%; */
 }
 
 /* 
@@ -525,7 +546,7 @@ NOSOTROS START
 .contact__section1_form {
   background-color: rgb(158, 135, 78);
   /* padding: 20px; */
-  margin-left: 10%;
+  margin: auto;
   text-align: center;
   border: 3px solid black;
   max-width: 550px;
@@ -822,4 +843,55 @@ TRANSICIONES Y ANIMACIONES START
   100% {
     opacity: 1;
   }
+}
+
+/* 
+
+
+APLICANDO CAROUSEL
+
+
+*/
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+}
+
+.carousel {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.houses__h1 {
+  text-align: center;
+  padding-top: 3%;
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.sectionFormTitle {
+  padding-top: 1%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.sectionFormP {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
 }
