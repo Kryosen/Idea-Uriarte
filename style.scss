@@ -1,0 +1,854 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*
+
+VARIABLES SASS START
+
+*/
+
+$color1: #192a5a;
+$color2: rgb(12, 5, 39);
+$color3: rgb(153, 132, 87);
+$color4: #0f1934;
+$color5: #071230;
+$font: "Lato";
+$fontmodifier: sans-serif;
+$sidesPaddingMargin: 10%;
+
+/*
+
+
+VARIABLES SASS END
+
+
+*/
+
+/*
+
+GRIDS
+
+*/
+.contenedorMain {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.contenedorNosotros {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* 
+
+HEADER START 
+
+*/
+@import "_header.scss";
+/* 
+
+HEADER END 
+
+*/
+
+/* 
+
+Index Start
+
+*/
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+.seccionesMain {
+  margin-top: 15px;
+}
+
+.hero {
+  height: auto;
+  margin-left: $sidesPaddingMargin;
+  margin-right: $sidesPaddingMargin;
+  margin-top: 10px;
+}
+
+.main__hero {
+  width: 100%;
+}
+
+.containerPripertiesMain {
+  width: 80%;
+  padding: 0;
+  margin-left: $sidesPaddingMargin;
+  margin-right: $sidesPaddingMargin;
+  overflow: hidden;
+}
+
+.sectionMain {
+  background-color: #a1a1a1;
+}
+
+.imgCasaIdeal {
+  padding-top: 25px;
+}
+
+.sectionMain__div1 {
+  width: auto;
+  padding: 0%;
+}
+
+.sectionMain__div1__img {
+  padding-top: $sidesPaddingMargin;
+  width: 100%;
+}
+
+.sectionMain__div2 {
+  width: auto;
+  padding: 0%;
+  padding-left: 10px;
+}
+
+.parrafoLargo {
+  font-size: 20px;
+  color: $color5;
+  font-family: $font, $fontmodifier;
+  margin-bottom: 5px;
+}
+
+.titlesMain {
+  margin-left: $sidesPaddingMargin;
+  margin-right: $sidesPaddingMargin;
+}
+
+.sectionMain__div2__h1 {
+  color: $color5;
+  font-family: $font, $fontmodifier;
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.sectionFormTitle {
+  text-align: center;
+}
+
+.sectionForm {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.btn-default {
+  margin-left: 25%;
+}
+
+.sectionForm__div {
+  padding-bottom: 15px;
+  h2 {
+    font-family: $font, $fontmodifier;
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-family: $font, $fontmodifier;
+    width: 100%;
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+}
+
+.sectionForm__div__form {
+  width: 100%;
+  border: 2px solid black;
+  width: 75%;
+  padding: 15px;
+  margin-left: 12%;
+}
+
+// .sectionForm__div
+
+// .sectionForm__div
+
+.inputBox {
+  height: 20px;
+}
+
+.inputItems {
+  padding: 10px;
+}
+
+.inputTextarea {
+  margin-left: 10px;
+  width: 95%;
+}
+
+.inputButtonEnviar {
+  margin-left: 10px;
+}
+
+.inputButtonBorrar {
+  margin-left: 50px;
+}
+
+.sectionFormPhoto__div {
+  width: 50%;
+  /* margin-top: 25%; */
+}
+
+.sectionFormPhoto__div__Photo {
+  width: 100%;
+}
+
+/* 
+  
+  INDEX END
+
+  */
+
+/* 
+  
+  
+  FOOTER START
+  
+  */
+@import "_footer.scss";
+/* 
+
+FOOTER END
+
+*/
+
+/* 
+
+
+NOSOTROS START
+
+*/
+
+.nosotros__section1 {
+  word-wrap: break-word;
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+}
+
+.nosotros__section1__h1 {
+  font-family: $font, $fontmodifier;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+.nosotros__section1__h2 {
+  text-align: center;
+  font-family: $font, $fontmodifier;
+  text-decoration-line: underline;
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+
+.nosotros__section1__p {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.bgColor {
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #102445,
+    #1a3053,
+    #243c62,
+    #2e4971
+  );
+  /* background-color: $color4; */
+  color: rgb(224, 224, 224);
+}
+
+.nosotros_section2_lideres {
+  display: flex;
+}
+
+.nosotros__section2__lider1 {
+  width: 50%;
+}
+
+.nosotros__section2__lider2 {
+  width: 50%;
+}
+
+.nosotros__section2__h2 {
+  font-family: $font, $fontmodifier;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.nosotros__section2__div__img {
+  border: 2px solid black;
+  /* border-radius: 50%; */
+  margin: auto;
+  display: block;
+}
+
+.nosotros__section2__h3 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nosotros__section2__p {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* 
+  
+  
+  NOSOTROS END
+  
+  */
+
+/* 
+  
+  
+  PROPIEDADES START
+  
+
+  */
+
+.cajaIconos {
+  width: auto;
+  padding-left: 46%;
+}
+
+.cajaCarousel {
+  align-items: center;
+  background-color: $color3;
+}
+
+.contenedorCarousel {
+  margin-left: $sidesPaddingMargin;
+  margin-right: $sidesPaddingMargin;
+}
+
+.housesList__text {
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+}
+
+.housesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.housesList {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 2px;
+}
+
+.housesListItem {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  font-size: 32px;
+  font-family: $font, $fontmodifier;
+  font-weight: bold;
+  color: $color5;
+  border: 3px solid $color4;
+  background-color: $color3;
+  width: min-content;
+}
+
+.housesList__bathroomIcon {
+  width: 4.5% !important;
+}
+
+.housesList__bedroomIcon {
+  width: 6% !important;
+}
+
+/* 
+  
+  
+  PROPIEDADES END
+  
+  
+  */
+
+/* 
+  
+  
+  AGENTES START
+  
+  
+  */
+
+.gridAgentes {
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.agentSection__h1 {
+  font-family: $font, $fontmodifier;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.phoneIcon {
+  text-align: center;
+  width: 20px;
+}
+
+.Img--size {
+  width: 100%;
+}
+
+.agents {
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  list-style: none;
+  border: 2px solid $color4;
+  background-image: linear-gradient(
+    to left,
+    $color3,
+    rgb(223, 192, 126),
+    $color3
+  );
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+  
+  
+  AGENTS END
+  
+  
+  */
+
+/* 
+  
+  
+  CONTACT START
+  
+  
+  */
+
+.SeccionesContacto {
+  display: flex;
+}
+
+.contact__section1 {
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+}
+
+.contact__section1__h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.contact__section1__h3 {
+  text-align: center;
+  font-size: 32px;
+  color: $color5;
+  padding-bottom: 80px;
+}
+
+.contact__section1__h4 {
+  text-align: center;
+  font-size: 32px;
+  color: rgb(121, 92, 19);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact__section1_form {
+  background-color: rgb(158, 135, 78);
+  /* padding: 20px; */
+  margin: auto;
+  text-align: center;
+  border: 3px solid black;
+  max-width: 550px;
+  min-height: 170px;
+}
+
+.contact__section1__form__items {
+  font-size: 25px;
+  color: $color5;
+}
+
+.contact__section1__form__input1 {
+  width: 36%;
+}
+
+.contact__section1__form__input2 {
+  width: 38%;
+}
+
+.contact__section1__form__input3 {
+  width: 64%;
+}
+
+.contact__section1__form__input4 {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.contact__section1__form__enviar {
+  display: block;
+  margin-top: 20px;
+  margin-left: 45%;
+  text-align: center;
+}
+
+.contact__section2__h2 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(138, 161, 179);
+  padding-bottom: 40px;
+}
+
+.contact__section2__map {
+  margin-bottom: 30px;
+}
+
+.contact__section2__h4 {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(138, 161, 179);
+}
+
+.contact__section2__p {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline $color5;
+  margin-bottom: 60px;
+  color: rgb(138, 161, 179);
+}
+
+.contact__section2 {
+  background-color: $color5;
+  margin-bottom: 15px;
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+}
+
+/* 
+  
+
+CONTACT END
+
+  
+  */
+
+/* 
+  
+  
+  FIND YOUR PLACE START
+  
+  
+  */
+
+.mainBuscaTuLugar {
+  height: 70vh;
+  background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73));
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contenedorSectionBusca {
+  height: 70vh;
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+  margin-bottom: 15px;
+  display: flex;
+  /* background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73)); */
+}
+
+.buscaTuLugar__section__h1 {
+  text-align: center;
+  font-size: 48px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+  color: whitesmoke;
+}
+
+.buscaTuLugar__section__h3 {
+  text-align: center;
+  font-size: 36px;
+  color: rgb(139, 106, 20);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.buscaTuLugar__formulario {
+  text-align: center;
+  font-size: 26px;
+  padding-top: 50px;
+}
+
+.buscaTuLugar__formulario__items {
+  color: whitesmoke;
+}
+
+.contenedorIframeBusca {
+  width: 100%;
+}
+
+/* 
+  
+  
+  MEDIA QUERIES/ 
+  
+  
+  */
+
+/* @media (max-width: 479px) {
+  .sectionMain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionForm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionForm__div__form {
+    width: 100%;
+  }
+
+  .itemsHeader {
+    padding: 2px;
+    font-size: 16px;
+  }
+
+  .header__nav {
+    width: 80%;
+    padding-top: 25px;
+  }
+
+  .header__nav__ul {
+    flex-wrap: wrap;
+  }
+
+  .gridAgentes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 15px;
+  }
+
+  .nosotros_section2_lideres {
+    flex-direction: column;
+  }
+
+  .nosotros__section2__lider1 {
+    width: 100%;
+  }
+
+  .nosotros__section2__lider2 {
+    width: 100%;
+  }
+
+  .contact__section1_form {
+    margin-left: 0%;
+  }
+
+  .contenedorSectionBusca {
+    flex-direction: column;
+  }
+
+  .buscaTuLugar__section__h1 {
+    font-size: 36px;
+  }
+
+  .sectionForm__div {
+    width: 50%;
+  }
+
+  .sectionForm__div__form {
+    width: 100%;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+}
+
+@media (min-width: 479px) {
+  .sectionMain {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .sectionForm {
+    flex-direction: row;
+    /* align-items: center; */
+/*  }
+}
+*/
+
+/* 
+
+
+TRANSICIONES Y ANIMACIONES START
+
+
+*/
+
+.itemsHeader {
+  transition: all 0.3s;
+}
+
+.itemsHeader:active {
+  transform: translateY(-5px);
+}
+
+.inputBox {
+  transition: all 1s;
+}
+
+.inputBox:focus {
+  height: 100%;
+  font-size: 26px;
+}
+
+.ContactInputButton {
+  transition: all 1s;
+}
+
+.ContactInputButton:focus {
+  width: 70%;
+  height: 100%;
+  font-size: 26px;
+}
+
+.agents {
+  transition: all 1s;
+}
+
+.agents:hover {
+  width: 105%;
+  /* height: 120%; */
+  /* font-size: 26px; */
+}
+
+.header__nav__ul--hover {
+  text-shadow: 3px 3px 10px rgb(196, 196, 196);
+  animation-duration: 4s;
+  animation-name: blinking;
+  /* animation-delay: 1s; */
+}
+
+.itemsFooter {
+  animation-duration: 4s;
+  animation-name: blinking;
+  /* animation-delay: 1s; */
+}
+
+.footer__copyright--styles {
+  animation-duration: 4s;
+  animation-name: blinking;
+  /* animation-delay: 1s; */
+}
+
+.header__image {
+  animation-duration: 1s;
+  animation-name: blinking;
+  /* animation-delay: 1s; */
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 
+
+
+APLICANDO CAROUSEL
+
+
+*/
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.sec {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+}
+
+.carousel {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.houses__h1 {
+  text-align: center;
+  padding-top: 3%;
+  font-family: $font, $fontmodifier;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.sectionFormTitle {
+  padding-top: 1%;
+  text-align: center;
+  font-family: $font, $fontmodifier;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.sectionFormP {
+  text-align: center;
+  font-family: $font, $fontmodifier;
+  font-size: 24px;
+}
