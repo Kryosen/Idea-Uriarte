@@ -12,6 +12,14 @@ VARIABLES SASS START
 
 */
 
+$colors: (
+  color1: #192a5a,
+  color2: rgb(12, 5, 39),
+  color3: rgb(153, 132, 87),
+  color4: #0f1934,
+  color5: #071230,
+);
+
 $color1: #192a5a;
 $color2: rgb(12, 5, 39);
 $color3: rgb(153, 132, 87);
@@ -22,11 +30,42 @@ $fontmodifier: sans-serif;
 $sidesPaddingMargin: 10%;
 
 /*
+  
+  
+  VARIABLES SASS END
+  
+  
+  */
 
+/*
+  
+  
+  EXTEND CLASS AND MIXIN START
+  
+  
+  */
 
-VARIABLES SASS END
+.marginPage {
+  margin-left: $sidesPaddingMargin;
+  margin-right: $sidesPaddingMargin;
+}
 
+.paddingPage {
+  padding-left: $sidesPaddingMargin;
+  padding-right: $sidesPaddingMargin;
+}
 
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/*
+  
+  
+  EXTEND CLASS AND MIXIN END
+  
+  
 */
 
 /*
@@ -69,10 +108,11 @@ Index Start
 */
 
 .main {
+  @include widthHeight(100%, auto);
   grid-area: main;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  // width: 100%;
   background-color: white;
 }
 
@@ -81,21 +121,25 @@ Index Start
 }
 
 .hero {
+  @extend .marginPage;
   height: auto;
-  margin-left: $sidesPaddingMargin;
-  margin-right: $sidesPaddingMargin;
+  // margin-left: $sidesPaddingMargin;
+  // margin-right: $sidesPaddingMargin;
   margin-top: 10px;
 }
 
 .main__hero {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 .containerPripertiesMain {
-  width: 80%;
+  @extend .marginPage;
+  @include widthHeight(80%, auto);
+  // width: 80%;
   padding: 0;
-  margin-left: $sidesPaddingMargin;
-  margin-right: $sidesPaddingMargin;
+  // margin-left: $sidesPaddingMargin;
+  // margin-right: $sidesPaddingMargin;
   overflow: hidden;
 }
 
@@ -108,35 +152,39 @@ Index Start
 }
 
 .sectionMain__div1 {
-  width: auto;
+  @include widthHeight(auto, auto);
+  // width: auto;
   padding: 0%;
 }
 
 .sectionMain__div1__img {
   padding-top: $sidesPaddingMargin;
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 .sectionMain__div2 {
-  width: auto;
+  @include widthHeight(auto, auto);
+  // width: auto;
   padding: 0%;
   padding-left: 10px;
 }
 
 .parrafoLargo {
   font-size: 20px;
-  color: $color5;
+  color: map-get($colors, color5);
   font-family: $font, $fontmodifier;
   margin-bottom: 5px;
 }
 
 .titlesMain {
-  margin-left: $sidesPaddingMargin;
-  margin-right: $sidesPaddingMargin;
+  @extend .marginPage;
+  // margin-left: $sidesPaddingMargin;
+  // margin-right: $sidesPaddingMargin;
 }
 
 .sectionMain__div2__h1 {
-  color: $color5;
+  color: map-get($colors, color5);
   font-family: $font, $fontmodifier;
   font-size: 36px;
   text-align: center;
@@ -166,16 +214,17 @@ Index Start
   }
   p {
     font-family: $font, $fontmodifier;
-    width: 100%;
+    @include widthHeight(100%, auto);
+    // width: 100%;
     font-size: 24px;
     padding-bottom: 40px;
   }
 }
 
 .sectionForm__div__form {
-  width: 100%;
+  @include widthHeight(75%, auto);
   border: 2px solid black;
-  width: 75%;
+  // width: 75%;
   padding: 15px;
   margin-left: 12%;
 }
@@ -194,7 +243,8 @@ Index Start
 
 .inputTextarea {
   margin-left: 10px;
-  width: 95%;
+  @include widthHeight(95%, auto);
+  // width: 95%;
 }
 
 .inputButtonEnviar {
@@ -206,12 +256,14 @@ Index Start
 }
 
 .sectionFormPhoto__div {
-  width: 50%;
+  @include widthHeight(50%, auto);
+  // width: 50%;
   /* margin-top: 25%; */
 }
 
 .sectionFormPhoto__div__Photo {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 /* 
@@ -241,9 +293,10 @@ NOSOTROS START
 */
 
 .nosotros__section1 {
+  @extend .paddingPage;
   word-wrap: break-word;
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
 }
 
 .nosotros__section1__h1 {
@@ -286,11 +339,13 @@ NOSOTROS START
 }
 
 .nosotros__section2__lider1 {
-  width: 50%;
+  @include widthHeight(50%, auto);
+  // width: 50%;
 }
 
 .nosotros__section2__lider2 {
-  width: 50%;
+  @include widthHeight(50%, auto);
+  // width: 50%;
 }
 
 .nosotros__section2__h2 {
@@ -315,8 +370,9 @@ NOSOTROS START
 }
 
 .nosotros__section2__p {
+  @include widthHeight(50%, auto);
   margin: auto;
-  width: 50%;
+  // width: 50%;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -337,18 +393,20 @@ NOSOTROS START
   */
 
 .cajaIconos {
-  width: auto;
+  @include widthHeight(auto, auto);
+  // width: auto;
   padding-left: 46%;
 }
 
 .cajaCarousel {
   align-items: center;
-  background-color: $color3;
+  background-color: map-get($colors, color3);
 }
 
 .contenedorCarousel {
-  margin-left: $sidesPaddingMargin;
-  margin-right: $sidesPaddingMargin;
+  @extend .marginPage;
+  // margin-left: $sidesPaddingMargin;
+  // margin-right: $sidesPaddingMargin;
 }
 
 .housesList__text {
@@ -377,18 +435,21 @@ NOSOTROS START
   font-size: 32px;
   font-family: $font, $fontmodifier;
   font-weight: bold;
-  color: $color5;
-  border: 3px solid $color4;
-  background-color: $color3;
-  width: min-content;
+  color: map-get($colors, color5);
+  border: 3px solid map-get($colors, color4);
+  background-color: map-get($colors, color3);
+  @include widthHeight(min-content, auto);
+  // width: min-content;
 }
 
 .housesList__bathroomIcon {
-  width: 4.5% !important;
+  @include widthHeight(4.5% !important, auto);
+  // width: 4.5% !important;
 }
 
 .housesList__bedroomIcon {
-  width: 6% !important;
+  @include widthHeight(6% !important, auto);
+  // width: 6% !important;
 }
 
 /* 
@@ -408,8 +469,9 @@ NOSOTROS START
   */
 
 .gridAgentes {
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  @extend .paddingPage;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -426,24 +488,27 @@ NOSOTROS START
 
 .phoneIcon {
   text-align: center;
-  width: 20px;
+  @include widthHeight(20px, auto);
+  // width: 20px;
 }
 
 .Img--size {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 .agents {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
   font-weight: bold;
   font-size: 30px;
   list-style: none;
-  border: 2px solid $color4;
+  border: 2px solid map-get($colors, color4);
   background-image: linear-gradient(
     to left,
-    $color3,
+    map-get($colors, color3),
     rgb(223, 192, 126),
-    $color3
+    map-get($colors, color3)
   );
   text-align: center;
   margin-bottom: 20px;
@@ -470,8 +535,9 @@ NOSOTROS START
 }
 
 .contact__section1 {
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  @extend .paddingPage;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
 }
 
 .contact__section1__h1 {
@@ -483,7 +549,7 @@ NOSOTROS START
 .contact__section1__h3 {
   text-align: center;
   font-size: 32px;
-  color: $color5;
+  color: map-get($colors, color5);
   padding-bottom: 80px;
 }
 
@@ -507,24 +573,28 @@ NOSOTROS START
 
 .contact__section1__form__items {
   font-size: 25px;
-  color: $color5;
+  color: map-get($colors, color5);
 }
 
 .contact__section1__form__input1 {
-  width: 36%;
+  @include widthHeight(36%, auto);
+  // width: 36%;
 }
 
 .contact__section1__form__input2 {
-  width: 38%;
+  @include widthHeight(38%, auto);
+  // width: 38%;
 }
 
 .contact__section1__form__input3 {
-  width: 64%;
+  @include widthHeight(64%, auto);
+  // width: 64%;
 }
 
 .contact__section1__form__input4 {
+  @include widthHeight(30%, auto);
   margin-top: 10px;
-  width: 30%;
+  // width: 30%;
 }
 
 .contact__section1__form__enviar {
@@ -554,16 +624,17 @@ NOSOTROS START
 .contact__section2__p {
   text-align: center;
   font-size: 20px;
-  text-decoration: underline $color5;
+  text-decoration: underline map-get($colors, color5);
   margin-bottom: 60px;
   color: rgb(138, 161, 179);
 }
 
 .contact__section2 {
-  background-color: $color5;
+  background-color: map-get($colors, color5);
   margin-bottom: 15px;
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  @extend .paddingPage;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
 }
 
 /* 
@@ -591,8 +662,9 @@ CONTACT END
 
 .contenedorSectionBusca {
   height: 70vh;
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  @extend .paddingPage;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
   margin-bottom: 15px;
   display: flex;
   /* background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73)); */
@@ -603,8 +675,9 @@ CONTACT END
   font-size: 48px;
   padding-top: 15px;
   padding-bottom: 50px;
-  padding-left: $sidesPaddingMargin;
-  padding-right: $sidesPaddingMargin;
+  @extend .paddingPage;
+  // padding-left: $sidesPaddingMargin;
+  // padding-right: $sidesPaddingMargin;
   color: whitesmoke;
 }
 
@@ -627,7 +700,8 @@ CONTACT END
 }
 
 .contenedorIframeBusca {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 /* 
@@ -753,8 +827,9 @@ TRANSICIONES Y ANIMACIONES START
 }
 
 .ContactInputButton:focus {
-  width: 70%;
-  height: 100%;
+  @include widthHeight(70%, 100%);
+  // width: 70%;
+  // height: 100%;
   font-size: 26px;
 }
 
@@ -763,7 +838,8 @@ TRANSICIONES Y ANIMACIONES START
 }
 
 .agents:hover {
-  width: 105%;
+  @include widthHeight(105%, auto);
+  // width: 105%;
   /* height: 120%; */
   /* font-size: 26px; */
 }
@@ -811,17 +887,20 @@ APLICANDO CAROUSEL
 */
 
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+  @include widthHeight(100%, 100%);
+  // width: 100%;
+  // height: 100%;
 }
 
 .sec {
-  width: 100%;
+  @include widthHeight(100%, auto);
+  // width: 100%;
 }
 
 .carousel-indicators li {
-  height: 10px;
-  width: 10px;
+  @include widthHeight(10px, 10px);
+  // height: 10px;
+  // width: 10px;
   border-radius: 50%;
   /* border: 2px solid black; */
 }

@@ -1,7 +1,11 @@
 .header {
   height: 100%;
   grid-area: header;
-  background-image: linear-gradient(to left, $color2, $color1);
+  background-image: linear-gradient(
+    to left,
+    map-get($colors, color2),
+    map-get($colors, color1)
+  );
   padding-left: $sidesPaddingMargin;
   padding-right: $sidesPaddingMargin;
   display: flex;
