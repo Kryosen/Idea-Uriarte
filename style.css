@@ -129,6 +129,10 @@ HEADER START
   color: orchid;
 }
 
+.bg-custom {
+  background-color: #0f1934;
+}
+
 /* 
 
 HEADER END 
@@ -181,7 +185,7 @@ Index Start
 }
 
 .imgCasaIdeal {
-  padding-top: 25px;
+  padding: 20px;
 }
 
 .sectionMain__div1 {
@@ -207,6 +211,7 @@ Index Start
   font-size: 20px;
   color: #071230;
   font-family: "Lato", sans-serif;
+  padding: 5px;
   margin-bottom: 5px;
 }
 
@@ -224,6 +229,7 @@ Index Start
 }
 
 .sectionForm {
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -264,6 +270,9 @@ Index Start
 
 .inputItems {
   padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .inputTextarea {
@@ -273,11 +282,17 @@ Index Start
 }
 
 .inputButtonEnviar {
-  margin-left: 10px;
+  background-color: #192a5a;
+}
+
+.inputButtonEnviarContacto {
+  margin: 15px;
+  background-color: #192a5a;
 }
 
 .inputButtonBorrar {
   margin-left: 50px;
+  background-color: #192a5a;
 }
 
 .sectionFormPhoto__div {
@@ -379,6 +394,7 @@ NOSOTROS START
 }
 
 .nosotros__section1__p {
+  padding: 10px;
   text-align: center;
   font-size: 24px;
   padding-bottom: 20px;
@@ -560,16 +576,31 @@ NOSOTROS START
 }
 
 .agents {
-  width: 100%;
+  width: 90%;
   height: auto;
   font-weight: bold;
   font-size: 30px;
   list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.agentsProperties {
+  height: auto;
+  margin: 5px;
   border: 2px solid #0f1934;
   background-image: -webkit-gradient(linear, right top, left top, from(#998457), color-stop(#dfc07e), to(#998457));
   background-image: linear-gradient(to left, #998457, #dfc07e, #998457);
-  text-align: center;
-  margin-bottom: 20px;
+}
+
+.containerPripertiesAgents {
+  width: 100%;
+}
+
+.sectionAgents {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
 }
 
 /* 
@@ -702,14 +733,14 @@ CONTACT END
   
   */
 .mainBuscaTuLugar {
-  height: 70vh;
-  background-image: radial-gradient(#393a6d, #1c1d49);
-  margin-top: 15px;
-  margin-bottom: 15px;
+  height: 100%;
+  width: 100%;
 }
 
 .contenedorSectionBusca {
-  height: 70vh;
+  height: auto;
+  background-image: radial-gradient(#393a6d, #1c1d49);
+  padding-bottom: 10px;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,9 +748,16 @@ CONTACT END
   /* background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73)); */
 }
 
+.inputButtonBuscar {
+  margin-left: 40px;
+}
+
 .buscaTuLugar__section__h1 {
+  background-image: radial-gradient(#393a6d, #1c1d49);
   text-align: center;
   font-size: 48px;
+  margin-top: 15px;
+  margin-bottom: 0;
   padding-top: 15px;
   padding-bottom: 50px;
   color: whitesmoke;
@@ -877,16 +915,14 @@ TRANSICIONES Y ANIMACIONES START
   font-size: 26px;
 }
 
-.agents {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+.agentsProperties {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.agents:hover {
-  width: 105%;
-  height: auto;
-  /* height: 120%; */
-  /* font-size: 26px; */
+.agentsProperties:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header__nav__ul--hover {

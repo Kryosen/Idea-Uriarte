@@ -148,7 +148,8 @@ Index Start
 }
 
 .imgCasaIdeal {
-  padding-top: 25px;
+  // padding-top: 25px;
+  padding: 20px;
 }
 
 .sectionMain__div1 {
@@ -174,6 +175,7 @@ Index Start
   font-size: 20px;
   color: map-get($colors, color5);
   font-family: $font, $fontmodifier;
+  padding: 5px;
   margin-bottom: 5px;
 }
 
@@ -197,6 +199,7 @@ Index Start
 }
 
 .sectionForm {
+  padding: 0;
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -239,6 +242,9 @@ Index Start
 
 .inputItems {
   padding: 10px;
+  font-family: $font, $fontmodifier;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .inputTextarea {
@@ -248,11 +254,17 @@ Index Start
 }
 
 .inputButtonEnviar {
-  margin-left: 10px;
+  background-color: $color1;
+}
+
+.inputButtonEnviarContacto {
+  margin: 15px;
+  background-color: $color1;
 }
 
 .inputButtonBorrar {
   margin-left: 50px;
+  background-color: $color1;
 }
 
 .sectionFormPhoto__div {
@@ -316,6 +328,7 @@ NOSOTROS START
 }
 
 .nosotros__section1__p {
+  padding: 10px;
   text-align: center;
   font-size: 24px;
   padding-bottom: 20px;
@@ -498,11 +511,20 @@ NOSOTROS START
 }
 
 .agents {
-  @include widthHeight(100%, auto);
+  @include widthHeight(90%, auto);
   // width: 100%;
   font-weight: bold;
   font-size: 30px;
   list-style: none;
+
+  text-align: center;
+  // margin: 5px;
+  padding: 0;
+}
+
+.agentsProperties {
+  height: auto;
+  margin: 5px;
   border: 2px solid map-get($colors, color4);
   background-image: linear-gradient(
     to left,
@@ -510,10 +532,17 @@ NOSOTROS START
     rgb(223, 192, 126),
     map-get($colors, color3)
   );
-  text-align: center;
-  margin-bottom: 20px;
 }
 
+.containerPripertiesAgents {
+  width: 100%;
+}
+
+.sectionAgents {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+}
 /* 
   
   
@@ -654,25 +683,33 @@ CONTACT END
   */
 
 .mainBuscaTuLugar {
-  height: 70vh;
-  background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73));
-  margin-top: 15px;
-  margin-bottom: 15px;
+  height: 100%;
+  width: 100%;
+  // margin-top: 15px;
 }
 
 .contenedorSectionBusca {
-  height: 70vh;
+  height: auto;
   @extend .paddingPage;
+  background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73));
   // padding-left: $sidesPaddingMargin;
   // padding-right: $sidesPaddingMargin;
+  padding-bottom: 10px;
   margin-bottom: 15px;
   display: flex;
   /* background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73)); */
 }
 
+.inputButtonBuscar {
+  margin-left: 40px;
+}
+
 .buscaTuLugar__section__h1 {
+  background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73));
   text-align: center;
   font-size: 48px;
+  margin-top: 15px;
+  margin-bottom: 0;
   padding-top: 15px;
   padding-bottom: 50px;
   @extend .paddingPage;
@@ -833,15 +870,15 @@ TRANSICIONES Y ANIMACIONES START
   font-size: 26px;
 }
 
-.agents {
-  transition: all 1s;
+.agentsProperties {
+  transition: all 0.5s;
 }
 
-.agents:hover {
-  @include widthHeight(105%, auto);
-  // width: 105%;
-  /* height: 120%; */
-  /* font-size: 26px; */
+.agentsProperties:hover {
+  transform: scale(1.2);
+  // width: 115%;
+  // // height: 100%;
+  // font-size: 36px;
 }
 
 .header__nav__ul--hover {
