@@ -95,7 +95,7 @@ GRIDS
 HEADER START 
 
 */
-@import "_header.scss";
+@import "_header";
 /* 
 
 HEADER END 
@@ -124,23 +124,17 @@ Index Start
 .hero {
   @extend .marginPage;
   height: auto;
-  // margin-left: $sidesPaddingMargin;
-  // margin-right: $sidesPaddingMargin;
   margin-top: 10px;
 }
 
 .main__hero {
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
 
 .containerPripertiesMain {
   @extend .marginPage;
   @include widthHeight(80%, auto);
-  // width: 80%;
   padding: 0;
-  // margin-left: $sidesPaddingMargin;
-  // margin-right: $sidesPaddingMargin;
   overflow: hidden;
 }
 
@@ -149,25 +143,21 @@ Index Start
 }
 
 .imgCasaIdeal {
-  // padding-top: 25px;
   padding: 20px;
 }
 
 .sectionMain__div1 {
   @include widthHeight(auto, auto);
-  // width: auto;
   padding: 0%;
 }
 
 .sectionMain__div1__img {
   padding-top: $sidesPaddingMargin;
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
 
 .sectionMain__div2 {
   @include widthHeight(auto, auto);
-  // width: auto;
   padding: 0%;
   padding-left: 10px;
 }
@@ -176,14 +166,13 @@ Index Start
   font-size: 20px;
   color: map-get($colors, color5);
   font-family: $font, $fontmodifier;
-  padding: 5px;
+  padding: 13px;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 .titlesMain {
   @extend .marginPage;
-  // margin-left: $sidesPaddingMargin;
-  // margin-right: $sidesPaddingMargin;
 }
 
 .sectionMain__div2__h1 {
@@ -219,7 +208,6 @@ Index Start
   p {
     font-family: $font, $fontmodifier;
     @include widthHeight(100%, auto);
-    // width: 100%;
     font-size: 24px;
     padding-bottom: 40px;
   }
@@ -228,14 +216,10 @@ Index Start
 .sectionForm__div__form {
   @include widthHeight(75%, auto);
   border: 2px solid black;
-  // width: 75%;
   padding: 15px;
   margin-left: 12%;
+  margin-bottom: 10px;
 }
-
-// .sectionForm__div
-
-// .sectionForm__div
 
 .inputBox {
   height: 20px;
@@ -251,7 +235,6 @@ Index Start
 .inputTextarea {
   margin-left: 10px;
   @include widthHeight(95%, auto);
-  // width: 95%;
 }
 
 .inputButtonEnviar {
@@ -259,7 +242,10 @@ Index Start
 }
 
 .inputButtonEnviarContacto {
-  margin: 15px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
   background-color: $color1;
 }
 
@@ -270,13 +256,10 @@ Index Start
 
 .sectionFormPhoto__div {
   @include widthHeight(50%, auto);
-  // width: 50%;
-  /* margin-top: 25%; */
 }
 
 .sectionFormPhoto__div__Photo {
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
 
 /* 
@@ -308,8 +291,6 @@ NOSOTROS START
 .nosotros__section1 {
   @extend .paddingPage;
   word-wrap: break-word;
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
 }
 
 .nosotros__section1__h1 {
@@ -344,7 +325,6 @@ NOSOTROS START
     #243c62,
     #2e4971
   );
-  /* background-color: $color4; */
   color: rgb(224, 224, 224);
 }
 
@@ -354,12 +334,10 @@ NOSOTROS START
 
 .nosotros__section2__lider1 {
   @include widthHeight(50%, auto);
-  // width: 50%;
 }
 
 .nosotros__section2__lider2 {
   @include widthHeight(50%, auto);
-  // width: 50%;
 }
 
 .nosotros__section2__h2 {
@@ -372,7 +350,6 @@ NOSOTROS START
 
 .nosotros__section2__div__img {
   border: 2px solid black;
-  /* border-radius: 50%; */
   margin: auto;
   display: block;
 }
@@ -386,7 +363,6 @@ NOSOTROS START
 .nosotros__section2__p {
   @include widthHeight(50%, auto);
   margin: auto;
-  // width: 50%;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -408,7 +384,6 @@ NOSOTROS START
 
 .cajaIconos {
   @include widthHeight(auto, auto);
-  // width: auto;
   padding-left: 46%;
 }
 
@@ -419,8 +394,6 @@ NOSOTROS START
 
 .contenedorCarousel {
   @extend .marginPage;
-  // margin-left: $sidesPaddingMargin;
-  // margin-right: $sidesPaddingMargin;
 }
 
 .housesList__text {
@@ -453,17 +426,14 @@ NOSOTROS START
   border: 3px solid map-get($colors, color4);
   background-color: map-get($colors, color3);
   @include widthHeight(min-content, auto);
-  // width: min-content;
 }
 
 .housesList__bathroomIcon {
   @include widthHeight(4.5% !important, auto);
-  // width: 4.5% !important;
 }
 
 .housesList__bedroomIcon {
   @include widthHeight(6% !important, auto);
-  // width: 6% !important;
 }
 
 /* 
@@ -484,8 +454,6 @@ NOSOTROS START
 
 .gridAgentes {
   @extend .paddingPage;
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -503,23 +471,18 @@ NOSOTROS START
 .phoneIcon {
   text-align: center;
   @include widthHeight(20px, auto);
-  // width: 20px;
 }
 
 .Img--size {
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
 
 .agents {
   @include widthHeight(90%, auto);
-  // width: 100%;
   font-weight: bold;
   font-size: 30px;
   list-style: none;
-
   text-align: center;
-  // margin: 5px;
   padding: 0;
 }
 
@@ -566,8 +529,6 @@ NOSOTROS START
 
 .contact__section1 {
   @extend .paddingPage;
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
 }
 
 .contact__section1__h1 {
@@ -591,47 +552,28 @@ NOSOTROS START
   padding-bottom: 50px;
 }
 
+.containerPripertiesContacto {
+  @extend .marginPage;
+  @include widthHeight(80%, auto);
+  padding: 0;
+}
+
 .contact__section1_form {
-  background-color: rgb(158, 135, 78);
-  /* padding: 20px; */
-  margin: auto;
-  text-align: center;
+  @include widthHeight(100%, auto);
   border: 3px solid black;
-  max-width: 550px;
-  min-height: 170px;
+  background-color: rgb(158, 135, 78);
+  padding: 15px;
+}
+
+.formDiv {
+  margin: auto;
 }
 
 .contact__section1__form__items {
-  font-size: 25px;
-  color: map-get($colors, color5);
-}
-
-.contact__section1__form__input1 {
-  @include widthHeight(36%, auto);
-  // width: 36%;
-}
-
-.contact__section1__form__input2 {
-  @include widthHeight(38%, auto);
-  // width: 38%;
-}
-
-.contact__section1__form__input3 {
-  @include widthHeight(64%, auto);
-  // width: 64%;
-}
-
-.contact__section1__form__input4 {
-  @include widthHeight(30%, auto);
-  margin-top: 10px;
-  // width: 30%;
-}
-
-.contact__section1__form__enviar {
-  display: block;
-  margin-top: 20px;
-  margin-left: 45%;
-  text-align: center;
+  padding: 10px;
+  font-family: $font, $fontmodifier;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .contact__section2__h2 {
@@ -663,8 +605,6 @@ NOSOTROS START
   background-color: map-get($colors, color5);
   margin-bottom: 15px;
   @extend .paddingPage;
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
 }
 
 /* 
@@ -686,19 +626,15 @@ CONTACT END
 .mainBuscaTuLugar {
   height: 100%;
   width: 100%;
-  // margin-top: 15px;
 }
 
 .contenedorSectionBusca {
   height: auto;
   @extend .paddingPage;
   background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73));
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
   padding-bottom: 10px;
   margin-bottom: 15px;
   display: flex;
-  /* background-image: radial-gradient(rgb(57, 58, 109), rgb(28, 29, 73)); */
 }
 
 .inputButtonBuscar {
@@ -714,8 +650,6 @@ CONTACT END
   padding-top: 15px;
   padding-bottom: 50px;
   @extend .paddingPage;
-  // padding-left: $sidesPaddingMargin;
-  // padding-right: $sidesPaddingMargin;
   color: whitesmoke;
 }
 
@@ -724,7 +658,7 @@ CONTACT END
   font-size: 36px;
   color: rgb(139, 106, 20);
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 10%;
 }
 
 .buscaTuLugar__formulario {
@@ -739,101 +673,7 @@ CONTACT END
 
 .contenedorIframeBusca {
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
-
-/* 
-  
-  
-  MEDIA QUERIES/ 
-  
-  
-  */
-
-/* @media (max-width: 479px) {
-  .sectionMain {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sectionForm {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sectionForm__div__form {
-    width: 100%;
-  }
-
-  .itemsHeader {
-    padding: 2px;
-    font-size: 16px;
-  }
-
-  .header__nav {
-    width: 80%;
-    padding-top: 25px;
-  }
-
-  .header__nav__ul {
-    flex-wrap: wrap;
-  }
-
-  .gridAgentes {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 15px;
-  }
-
-  .nosotros_section2_lideres {
-    flex-direction: column;
-  }
-
-  .nosotros__section2__lider1 {
-    width: 100%;
-  }
-
-  .nosotros__section2__lider2 {
-    width: 100%;
-  }
-
-  .contact__section1_form {
-    margin-left: 0%;
-  }
-
-  .contenedorSectionBusca {
-    flex-direction: column;
-  }
-
-  .buscaTuLugar__section__h1 {
-    font-size: 36px;
-  }
-
-  .sectionForm__div {
-    width: 50%;
-  }
-
-  .sectionForm__div__form {
-    width: 100%;
-  }
-
-  .inputBox {
-    width: 100%;
-  }
-}
-
-@media (min-width: 479px) {
-  .sectionMain {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .sectionForm {
-    flex-direction: row;
-    /* align-items: center; */
-/*  }
-}
-*/
 
 /* 
 
@@ -866,8 +706,6 @@ TRANSICIONES Y ANIMACIONES START
 
 .ContactInputButton:focus {
   @include widthHeight(70%, 100%);
-  // width: 70%;
-  // height: 100%;
   font-size: 26px;
 }
 
@@ -877,34 +715,27 @@ TRANSICIONES Y ANIMACIONES START
 
 .agentsProperties:hover {
   transform: scale(1.2);
-  // width: 115%;
-  // // height: 100%;
-  // font-size: 36px;
 }
 
 .header__nav__ul--hover {
   text-shadow: 3px 3px 10px rgb(196, 196, 196);
   animation-duration: 4s;
   animation-name: blinking;
-  /* animation-delay: 1s; */
 }
 
 .itemsFooter {
   animation-duration: 4s;
   animation-name: blinking;
-  /* animation-delay: 1s; */
 }
 
 .footer__copyright--styles {
   animation-duration: 4s;
   animation-name: blinking;
-  /* animation-delay: 1s; */
 }
 
 .header__image {
   animation-duration: 1s;
   animation-name: blinking;
-  /* animation-delay: 1s; */
 }
 
 @keyframes blinking {
@@ -926,21 +757,15 @@ APLICANDO CAROUSEL
 
 .carousel-inner img {
   @include widthHeight(100%, 100%);
-  // width: 100%;
-  // height: 100%;
 }
 
 .sec {
   @include widthHeight(100%, auto);
-  // width: 100%;
 }
 
 .carousel-indicators li {
   @include widthHeight(10px, 10px);
-  // height: 10px;
-  // width: 10px;
   border-radius: 50%;
-  /* border: 2px solid black; */
 }
 
 .carousel {
@@ -968,4 +793,16 @@ APLICANDO CAROUSEL
   text-align: center;
   font-family: $font, $fontmodifier;
   font-size: 24px;
+}
+
+.whateverIMG {
+  width: 20%;
+}
+
+.navarbarProperties {
+  justify-content: end;
+}
+
+.whateverdat {
+  margin-bottom: 10%;
 }

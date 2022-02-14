@@ -1,0 +1,6 @@
+Idea Gonzalo Uriarte:
+
+Este proyecto se basa en una pagina de bienes raices, se enfoca en mostrar propiedades a los clientes y que puedan elegir su hogar o contactarse con los agentes en el caso.
+Hay cosas que no se pudieron  completar en el curso ya que son herramientas que se enseñan en futuros cursos. Ya sea las propiedades a mostrarse en el mapa en "Busca tu Lugar"
+o las propiedades a mostrar en el carrusel.
+ 

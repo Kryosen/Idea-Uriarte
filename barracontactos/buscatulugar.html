@@ -24,123 +24,149 @@
   <body>
     <div class="contenedorMain">
       <header class="header">
-        <div class="headerImg">
-          <img src="../img/Updated logo.png" alt="logo" class="header__image" />
-        </div>
-        <nav class="header__nav">
-          <ul class="header__nav__ul">
-            <li class="itemsHeader header__nav__ul__li1">
-              <a href="../index.html" class="header__nav__ul--hover">Inicio</a>
-            </li>
-            <li class="itemsHeader header__nav__ul__li2">
-              <a href="nosotros.html" class="header__nav__ul--hover"
-                >Nosotros</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li3">
-              <a href="propiedades.html" class="header__nav__ul--hover"
-                >Propiedades</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li4">
-              <a href="agentes.html" class="header__nav__ul--hover">Agentes</a>
-            </li>
-            <li class="itemsHeader header__nav__ul__li5">
-              <a href="contacto.html" class="header__nav__ul--hover"
-                >Contacto</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li6">
-              <a href="buscatulugar.html" class="header__nav__ul--hover"
-                >Busca tu Lugar</a
-              >
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="whateverIMG">
+            <img
+              src="../img/Updated logo.png"
+              alt="logo"
+              class="header__image"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navarbarProperties"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav header__nav__ul">
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/propiedades.html"
+                  >Propiedades</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/agentes.html"
+                  >Agentes</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/buscatulugar.html"
+                  >Busca tu Lugar</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main mainBuscaTuLugar">
         <h1 class="buscaTuLugar__section__h1">
           Encontra la propiedad que te gusta, donde vos quieras
         </h1>
-        <div class="contenedorSectionBusca">
-          <div class="contenedorIframeBusca">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37184.791348754676!2d-58.47387329475572!3d-34.53577053171419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5dc4bd56831%3A0x4197e93630decaeb!2sCasa%20Argentina!5e0!3m2!1ses-419!2sar!4v1637953077004!5m2!1ses-419!2sar"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              class="buscaTuLugar__section__mapa"
-            ></iframe>
-          </div>
-          <div class="buscaTuLugar__section__form">
-            <h3 class="buscaTuLugar__section__h3">
-              Agrega tus parametros y empeza a buscar
-            </h3>
-            <form action="" class="buscaTuLugar__formulario">
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Categoria de propiedad:</label
-              >
-              <select name="" id="">
-                <option value="A1">Casa</option>
-                <option value="A2">Departamento</option>
-                <option value="A3">Oficinas</option>
-                <option value="A4">Fabricas</option>
-              </select>
+        <div class="container-fluid contenedorSectionBusca">
+          <section class="row">
+            <div class="col-xs-12 col-sm-6 contenedorIframeBusca">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37184.791348754676!2d-58.47387329475572!3d-34.53577053171419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5dc4bd56831%3A0x4197e93630decaeb!2sCasa%20Argentina!5e0!3m2!1ses-419!2sar!4v1637953077004!5m2!1ses-419!2sar"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="buscaTuLugar__section__mapa"
+              ></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6 buscaTuLugar__section__form">
+              <h3 class="buscaTuLugar__section__h3">
+                Agrega tus parametros y empeza a buscar
+              </h3>
+              <div class="container-fluid containerPropertiesBusca">
+                <section class="row sectionForm">
+                    <form action="" class="buscaTuLugar__formulario">
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Categoria de propiedad:</label
+                      >
+                      <select name="" id="">
+                        <option value="A1">Casa</option>
+                        <option value="A2">Departamento</option>
+                        <option value="A3">Oficinas</option>
+                        <option value="A4">Fabricas</option>
+                      </select>
+                      <br />
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Zona:</label
+                      >
+                      <select name="" id="">
+                        <option value="A1">Norte</option>
+                        <option value="A2">Sur</option>
+                        <option value="A3">Este</option>
+                        <option value="A4">Oeste</option>
+                      </select>
+                      <br />
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Habitaciones:</label
+                      >
+                      <select name="" id="">
+                        <option value="A1">1</option>
+                        <option value="A2">2</option>
+                        <option value="A3">3</option>
+                        <option value="A4">4</option>
+                      </select>
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Baños:</label
+                      >
+                      <select name="" id="">
+                        <option value="A1">1</option>
+                        <option value="A2">2</option>
+                        <option value="A3">3</option>
+                        <option value="A4">4</option>
+                      </select>
+                      <br />
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Precio:
+                      </label>
+                      <br />
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Min:</label
+                      >
+                      <input type="number" name="Minimo" />
+                      <br />
+                      <label for="Zona" class="buscaTuLugar__formulario__items"
+                        >Max:</label
+                      >
+                      <input type="number" name="Maximo" />
+                      <br />
+                      <button
+                        type="button"
+                        class="btn btn-default btn-primary inputButtonBuscar"
+                      >
+                        Buscar
+                      </button>
+                    </form>
+                  </div>
+                </section>
+              </div>
               <br />
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Zona:</label
-              >
-              <select name="" id="">
-                <option value="A1">Norte</option>
-                <option value="A2">Sur</option>
-                <option value="A3">Este</option>
-                <option value="A4">Oeste</option>
-              </select>
-              <br />
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Habitaciones:</label
-              >
-              <select name="" id="">
-                <option value="A1">1</option>
-                <option value="A2">2</option>
-                <option value="A3">3</option>
-                <option value="A4">4</option>
-              </select>
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Baños:</label
-              >
-              <select name="" id="">
-                <option value="A1">1</option>
-                <option value="A2">2</option>
-                <option value="A3">3</option>
-                <option value="A4">4</option>
-              </select>
-              <br />
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Precio:
-              </label>
-              <br />
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Min:</label
-              >
-              <input type="number" name="Minimo" />
-              <br />
-              <label for="Zona" class="buscaTuLugar__formulario__items"
-                >Max:</label
-              >
-              <input type="number" name="Maximo" />
-              <br />
-              <button
-                type="button"
-                class="btn btn-default btn-primary inputButtonBuscar"
-              >
-                Buscar
-              </button>
-            </form>
-            <br />
-          </div>
+            </div>
+          </section>
         </div>
       </main>
       <footer class="footer">
@@ -173,5 +199,22 @@
         </div>
       </footer>
     </div>
+    <!-- SCRIPTS DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FIN -->
   </body>
 </html>

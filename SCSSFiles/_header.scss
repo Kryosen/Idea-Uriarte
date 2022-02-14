@@ -27,9 +27,7 @@
 }
 
 .header__nav__ul {
-  height: 100%;
   display: flex;
-  list-style: none;
   justify-content: end;
   align-items: center;
   a {
@@ -40,15 +38,9 @@
 }
 
 .itemsHeader {
-  padding: 5px;
-  font-size: 20px;
+  padding: 1px;
+  font-size: 18px;
 }
-
-// .header__nav__ul a {
-//   font-family: $font, $fontmodifier;
-//   color: white;
-//   text-decoration: none;
-// }
 
 .header__nav__ul--hover:hover {
   color: orchid;

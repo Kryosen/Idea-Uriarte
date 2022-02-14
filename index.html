@@ -21,50 +21,53 @@
   <body>
     <div class="contenedorMain">
       <header class="header">
-        <div class="headerImg">
-          <img src="img/Updated logo.png" alt="logo" class="header__image" />
-        </div>
-        <nav class="header__nav">
-          <ul class="header__nav__ul">
-            <li class="itemsHeader header__nav__ul__li1">
-              <a href="index.html" class="header__nav__ul--hover">Inicio</a>
-            </li>
-            <li class="itemsHeader header__nav__ul__li2">
-              <a
-                href="barracontactos/nosotros.html"
-                class="header__nav__ul--hover"
-                >Nosotros</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li3">
-              <a
-                href="barracontactos/propiedades.html"
-                class="header__nav__ul--hover"
-                >Propiedades</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li4">
-              <a
-                href="barracontactos/agentes.html"
-                class="header__nav__ul--hover"
-                >Agentes</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li5">
-              <a
-                href="barracontactos/contacto.html"
-                class="header__nav__ul--hover"
-                >Contacto</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li6">
-              <a
-                href="barracontactos/buscatulugar.html"
-                class="header__nav__ul--hover"
-                >Busca tu Lugar</a
-              >
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="whateverIMG">
+            <img src="img/Updated logo.png" alt="logo" class="header__image" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navarbarProperties"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav header__nav__ul">
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="barracontactos/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="barracontactos/propiedades.html"
+                  >Propiedades</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="barracontactos/agentes.html"
+                  >Agentes</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="barracontactos/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="barracontactos/buscatulugar.html"
+                  >Busca tu Lugar</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main">
@@ -83,14 +86,13 @@
             <div class="col-xs-12 col-sm-6 sectionMain__div2">
               <h1 class="sectionMain__div2__h1">Encuentra tu casa ideal</h1>
               <p class="parrafoLargo">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                rerum tenetur quaerat quia numquam, at aliquid. Quisquam
-                blanditiis quas nam. Unde enim autem eaque impedit id
-                consequuntur tempora, corrupti blanditiis accusantium maiores
-                temporibus? Impedit ab ea quasi, maxime velit eos blanditiis.
-                Cumque quam accusamus minima magnam voluptatum nisi, corrupti
-                cum vero fuga harum eos eaque doloribus saepe ea aliquid esse
-                modi? Ipsa odit explicabo temporibum
+                Nosotros nos especializamos en ayudar a nuestros clientes a
+                buscar su casa ideal apta para sus necesidades. Nuestros agentes
+                tienen una gran variedad de oferta, ya sea para ayudarte
+                encontrar lo que busas o satisfacer los requisitos especificos
+                que queres. No dudes en contactar a uno de nuestros agentes y
+                ellos te responderan lo antes posible para resolver tu dudas y
+                consultas.
               </p>
             </div>
           </section>
@@ -118,7 +120,6 @@
                   placeholder=""
                   class="form-control"
                 />
-                <!-- <br /> -->
                 <label for="contacto" class="inputItems"
                   >Numero de Contacto:
                 </label>
@@ -128,7 +129,6 @@
                   placeholder=""
                   class="form-control"
                 />
-                <!-- <br /> -->
                 <label for="email" class="inputItems">Email: </label>
                 <input
                   type="email"
@@ -136,11 +136,9 @@
                   placeholder=""
                   class="form-control"
                 />
-                <!-- <br /> -->
                 <label for="info" class="inputItems"
                   >Como podemos ayudarte:</label
                 >
-                <!-- <br /> -->
                 <textarea
                   name="info"
                   rows="6"

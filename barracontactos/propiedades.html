@@ -21,38 +21,57 @@
   <body>
     <div class="contenedorMain">
       <header class="header">
-        <div class="headerImg">
-          <img src="../img/Updated logo.png" alt="logo" class="header__image" />
-        </div>
-        <nav class="header__nav">
-          <ul class="header__nav__ul">
-            <li class="itemsHeader header__nav__ul__li1">
-              <a href="../index.html" class="header__nav__ul--hover">Inicio</a>
-            </li>
-            <li class="itemsHeader header__nav__ul__li2">
-              <a href="nosotros.html" class="header__nav__ul--hover"
-                >Nosotros</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li3">
-              <a href="propiedades.html" class="header__nav__ul--hover"
-                >Propiedades</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li4">
-              <a href="agentes.html" class="header__nav__ul--hover">Agentes</a>
-            </li>
-            <li class="itemsHeader header__nav__ul__li5">
-              <a href="contacto.html" class="header__nav__ul--hover"
-                >Contacto</a
-              >
-            </li>
-            <li class="itemsHeader header__nav__ul__li6">
-              <a href="buscatulugar.html" class="header__nav__ul--hover"
-                >Busca tu Lugar</a
-              >
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="whateverIMG">
+            <img
+              src="../img/Updated logo.png"
+              alt="logo"
+              class="header__image"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navarbarProperties"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav header__nav__ul">
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/propiedades.html"
+                  >Propiedades</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/agentes.html"
+                  >Agentes</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item itemsHeader">
+                <a class="nav-link" href="../barracontactos/buscatulugar.html"
+                  >Busca tu Lugar</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main">
@@ -138,119 +157,6 @@
           </a>
         
         </div>
-          <!--Futura slider de casas con sus respectivos precios-->
-          <!-- <ul class="housesList">
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa1" /><br />
-              casa 1 <br />
-              <span class="housesList__text">$123.000</span> <br />
-              <span class="housesList__text">Barrio Norte</span> <br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa2" /><br />
-              casa 2 <br />
-              <span class="housesList__text">$123.000</span> <br />
-              <span class="housesList__text">Barrio Norte</span><br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa3" /><br />
-              casa 3 <br />
-              <span class="housesList__text">$123.000</span> <br />
-              <span class="housesList__text">Barrio Norte</span> <br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa4" /><br />
-              casa 4
-              <br />
-              <span class="housesList__text">$123.000</span>
-              <br />
-              <span class="housesList__text">Barrio Norte</span> <br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa5" /><br />
-              casa 5 <br />
-              <span class="housesList__text">$123.000</span> <br />
-              <span class="housesList__text">Barrio Norte</span> <br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-            <li class="housesListItem">
-              <img src="../img/Casa Ideal Resize.jpg" alt="casa6" /><br />
-              casa 6 <br />
-              <span class="housesList__text">$123.000</span> <br />
-              <span class="housesList__text">Barrio Norte</span> <br />
-              <img
-                src="../img/Bathroom icon.png"
-                alt=""
-                class="housesList__bathroomIcon"
-              />
-              <span>3</span>
-              <img
-                src="../img/bedroom icon.png"
-                alt=""
-                class="housesList__bedroomIcon"
-              />
-              <span>3</span>
-            </li>
-          </ul> -->
         </section>
       </main>
       <footer class="footer">
